@@ -18,11 +18,9 @@ const SignUp = () => {
     const bearer = "Bearer " + setDone.token;
 
     axios
-      .post(
-        "https://travel-partner-backend.herokuapp.com/users/me/pictures",
-        fd,
-        { headers: { Authorization: bearer } }
-      )
+      .post("https://sharetrip-spyder.herokuapp.com/users/me/pictures", fd, {
+        headers: { Authorization: bearer },
+      })
       .then((res) => {
         console.log(res);
         if (res.status === 200) {
@@ -32,7 +30,7 @@ const SignUp = () => {
   };
 
   const onSubmit = (data) => {
-    fetch("https://travel-partner-backend.herokuapp.com/users", {
+    fetch("https://sharetrip-spyder.herokuapp.com/users", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
