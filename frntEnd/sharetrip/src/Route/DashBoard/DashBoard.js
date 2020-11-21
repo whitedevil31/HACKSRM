@@ -35,15 +35,12 @@ const DashBoard = () => {
   const OnSubmitHandler = async (data) => {
     const bearer = "Bearer " + nanda;
 
-    const getting = await fetch(
-      "",
-      {
-        method: "POST",
-        withCredentials: true,
-        headers: { Authorization: bearer, "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      }
-    );
+    const getting = await fetch("", {
+      method: "POST",
+      withCredentials: true,
+      headers: { Authorization: bearer, "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
     const get = await getting.json();
 
     setTimeout(() => {
