@@ -37,7 +37,6 @@ const userSchema = new mongoose.Schema(
 userSchema.virtual(
   "travel",
   {
-    // any name is fine
     ref: "TravelPost",
     localField: "_id",
     foreignField: "owner",

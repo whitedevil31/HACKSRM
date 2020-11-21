@@ -1,0 +1,68 @@
+.container {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.loginForm {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  align-items: center;
+  border: thick solid black;
+  border-radius: 30px;
+  text-align: center;
+
+  justify-content: center;
+}
+
+.h1-txt {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.formArea {
+  display: flex;
+  width: 100%;
+  height: 15vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit {
+  display: flex;
+  margin-top: 25px;
+  align-items: center;
+  justify-content: center;
+}
+.input-container {
+  display: flex;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+}
+.input-entry {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.h4-text {
+  text-align: center;
+}
+
+.form1 {
+  width: 100%;
+}
