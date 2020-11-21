@@ -3,8 +3,8 @@ import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import Login from "./Route/Login/Login";
 import SignUp from "./Route/SignUp/SignUp";
 import DashBoard from "./Route/DashBoard/DashBoard";
-// import CreatePost from "./Route/CreatePost";
-// import PostId from "./Route/PostId";
+import CreatePost from "./Route/CreatePost/CreatePost";
+import PostId from "./Route/PostId/PostId";
 
 const App = () => {
   return (
@@ -20,12 +20,12 @@ const App = () => {
         <Route path="/dashboard">
           <DashBoard />
         </Route>
-        {/* <Route path="/post">
+        <Route path="/post">
           <CreatePost />
         </Route>
         <Route path="/postId">
           <PostId />
-        </Route>   */}
+        </Route>
       </Switch>
     </Router>
   );

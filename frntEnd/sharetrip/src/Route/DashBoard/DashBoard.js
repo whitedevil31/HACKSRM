@@ -18,7 +18,7 @@ const DashBoard = () => {
   const history = useHistory();
   useEffect(() => {
     const bearer = "Bearer " + nanda;
-    fetch("", {
+    fetch("https://sharetrip-spyder.herokuapp.com/users/me", {
       method: "GET",
       withCredentials: true,
       headers: {
@@ -35,12 +35,15 @@ const DashBoard = () => {
   const OnSubmitHandler = async (data) => {
     const bearer = "Bearer " + nanda;
 
-    const getting = await fetch("", {
-      method: "POST",
-      withCredentials: true,
-      headers: { Authorization: bearer, "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    });
+    const getting = await fetch(
+      "https://sharetrip-spyder.herokuapp.com/travel/filter",
+      {
+        method: "POST",
+        withCredentials: true,
+        headers: { Authorization: bearer, "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      }
+    );
     const get = await getting.json();
 
     setTimeout(() => {
@@ -52,7 +55,7 @@ const DashBoard = () => {
   const logoutHandler = () => {
     const bearer = "Bearer " + nanda;
 
-    fetch("", {
+    fetch("https://sharetrip-spyder.herokuapp.com/users/logout", {
       method: "POST",
       withCredentials: true,
       headers: {
@@ -88,42 +91,48 @@ const DashBoard = () => {
           <a
             href={`https://whitedevil31-chatapp.herokuapp.com/chat.html?username=${profile.name}&room=${profile.name}`}
             target="_blank"
+            className="chat-msg"
           >
             check msgs !
           </a>
         </div>
       </div>
 
-      <form onSubmit={handleSubmit(OnSubmitHandler)}>
-        <input
-          type="text"
-          placeholder="location to search for"
-          name="location"
-          ref={register}
-        />
-        <input
-          type="text"
-          placeholder="starting date"
-          name="startDate"
-          ref={register}
-        />
-        <input
-          type="text"
-          placeholder="ending date"
-          name="endDate"
-          ref={register}
-        />
+      <form onSubmit={handleSubmit(OnSubmitHandler)} className="dash-form">
+        <div className="search">
+          <input
+            className="dash-input"
+            type="text"
+            placeholder="location to search for"
+            name="location"
+            ref={register}
+          />
+          <input
+            className="dash-input"
+            type="text"
+            placeholder="starting date"
+            name="startDate"
+            ref={register}
+          />
+          <input
+            className="dash-input"
+            type="text"
+            placeholder="ending date"
+            name="endDate"
+            ref={register}
+          />
 
-        <input type="submit" />
+          <input className="btn-submit" type="submit" />
+        </div>
       </form>
-      <button onClick={() => setRedmi(true)}>get my profile data</button>
+
       {redmi && (
         <div>
           <h4>{profile.name}</h4>
           <h5>{profile.email}</h5>
 
           <img
-            src={`https://travel-partner-backend.herokuapp.com/users/${profile._id}/pictures`}
+            src={`/users/${profile._id}/pictures`}
             alt="loading"
             className="profile"
           />
@@ -140,7 +149,7 @@ const DashBoard = () => {
               }}
             >
               <img
-                src={`https://travel-partner-backend.herokuapp.com/users/${item.owner}/pictures`}
+                src={`https://sharetrip-spyder.herokuapp.com/users/${item.owner}/pictures`}
                 alt="loading"
                 className="profile"
               />

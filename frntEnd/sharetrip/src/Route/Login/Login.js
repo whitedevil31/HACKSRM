@@ -14,7 +14,7 @@ const Login = () => {
   const [spinner, setSpinner] = useState(false);
   const { register, handleSubmit } = useForm();
   const OnSubmit = (data) => {
-    fetch("https://sharetrip-spyder.herokuapp.com/login", {
+    fetch("https://sharetrip-spyder.herokuapp.com/users/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

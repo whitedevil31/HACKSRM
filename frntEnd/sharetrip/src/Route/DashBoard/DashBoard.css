@@ -1,32 +1,80 @@
 * {
-    margin: 0px;
-  }
-  
-  .dash-container {
-    width: 100%;
-    height: 100vh;
-  }
-  
-  .dash-header {
-    display: flex;
-    width: 100%;
-    height: 10vh;
-    align-items: center;
-    background-color: pink;
-    align-items: center;
-  }
-  .header-left {
-    margin-left: 10px;
-    width: 55%;
-  }
-  
-  .header-right {
-    display: flex;
-    width: 45%;
-    height: 100%;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 95px;
-    margin-right: 30px;
-  }
-  
+  margin: 0px;
+}
+
+.dash-container {
+  background-color: #8bc6ec;
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+
+  width: 100%;
+  height: 100vh;
+}
+
+.dash-header {
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  align-items: center;
+  background-color: pink;
+  align-items: center;
+}
+.header-left {
+  margin-left: 10px;
+  width: 55%;
+}
+
+.header-right {
+  display: flex;
+  width: 45%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 95px;
+  margin-right: 30px;
+}
+
+.search {
+  align-items: center;
+  height: 10vh;
+  display: flex;
+  width: 100%;
+
+  justify-content: space-around;
+}
+.logout {
+  border: none;
+  background: none;
+}
+.logout:hover {
+  cursor: pointer;
+}
+
+.btn-sign-up {
+  border: none;
+  background: none;
+}
+.chat-msg {
+  text-decoration: none;
+  color: black;
+}
+.btn-sign-up:hover {
+  cursor: pointer;
+}
+
+.dash-form {
+  width: 100%;
+}
+.dash-input {
+  width: 170px;
+  border-radius: 10px;
+  height: 40px;
+}
+
+.btn-submit {
+  height: 50px;
+  width: 100px;
+  border-radius: 12px;
+}
