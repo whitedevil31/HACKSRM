@@ -1,4 +1,7 @@
 const mongoose = require("mongoose");
+const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
+const TravelPost = require("./travelSchema");
 
 const userSchema = new mongoose.Schema(
   {
@@ -29,6 +32,28 @@ const userSchema = new mongoose.Schema(
     pictures: { type: Buffer },
   },
   { timestamps: true }
+);
+
+userSchema.virtual(
+  "travel",
+  {
+    // any name is fine
+    ref: "TravelPost",
+    localField: "_id",
+    foreignField: "owner",
+  },
+  {
+    ref: "TravelPost",
+    localField: "name",
+    foreignField: "ownerName",
+  },
+  {
+    ref: "TravelPost",
+    localField: "age",
+    foreignField: "ownerAge",
+  },
+  { ref: "TravelPost", localField: "gender", foreignField: "ownerGender" },
+  { ref: "TravelPost", localField: "bio", foreignField: "ownerBio" }
 );
 
 userSchema.methods.toJSON = function () {
