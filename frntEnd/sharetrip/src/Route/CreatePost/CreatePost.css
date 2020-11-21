@@ -1,0 +1,84 @@
+* {
+  margin: 0px;
+}
+
+.crt-container {
+  background-color: #8bc6ec;
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.crt-post {
+  width: 55%;
+  display: flex;
+
+  height: 70vh;
+  align-items: center;
+  border: thick solid blueviolet;
+  border-radius: 30px;
+  text-align: center;
+
+  justify-content: center;
+}
+
+.input-crt {
+  width: 200px;
+  margin-left: 30px;
+  border-radius: 20px;
+  padding: 20px;
+  border: 3px solid blueviolet;
+}
+.input-crt-txt {
+  resize: none;
+  width: 300px;
+  margin-left: 30px;
+  border-radius: 20px;
+  padding: 20px;
+  height: 150px;
+  border: 3px solid blueviolet;
+}
+.crt-h1 {
+  margin-bottom: 20px;
+}
+
+.lft {
+  margin-top: 5px;
+
+  height: 100%;
+  width: 87%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.rgt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.crt-submit {
+  width: 200px;
+  margin-left: 30px;
+  border-radius: 20px;
+  padding: 20px;
+  border: 3px solid blueviolet;
+}
+
+#crt-submit {
+  width: 200px;
+  height: 60px;
+  color: #e73c7e;
+}
+#crt-submit:hover {
+  background-color: blueviolet;
+  color: white;
+}

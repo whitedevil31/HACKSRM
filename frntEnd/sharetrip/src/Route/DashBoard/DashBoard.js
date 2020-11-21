@@ -157,11 +157,16 @@ const DashBoard = () => {
                 <h4>{item.ownerName}</h4>
               </div>
               <div className="RESULT_RIGHT">
-                <p>Travel:{moment(item.startDate).format("DD-MM-YYYY")}</p>
-                <p>locations planned :{item.places}</p>
-                <p>days:{item.days}</p>
-                <p> Age :{item.ownerAge}</p>
-                <p> Gender :{item.ownerGender}</p>
+                <div className="left">
+                  <h4>Travel:{moment(item.startDate).format("DD-MM-YYYY")}</h4>
+                  <h4>Budget:{item.Budget}</h4>{" "}
+                  <h4>Expected Partner:{item.Expected}</h4>
+                </div>
+                <div className="right">
+                  <h4>Days Planned:{item.days}</h4>
+                  <h4>Age :{item.ownerAge}</h4>
+                  <h4> Gender :{item.ownerGender}</h4>
+                </div>
               </div>
             </div>
           ))}

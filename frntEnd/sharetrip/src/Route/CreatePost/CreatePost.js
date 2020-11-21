@@ -30,33 +30,59 @@ const CreatePost = () => {
     });
   };
   return (
-    <div>
-      <h1>create your post</h1>
+    <div className="crt-container">
+      <h1 className="crt-h1">Create A post to the outer World ! </h1>
 
-      <form onSubmit={handleSubmit(OnSubmitHandler)}>
-        <input
-          type="text"
-          placeholder="city to visit"
-          name="location"
-          ref={register}
-        />
-        <div className="inputs">
-          Journey starting date :
+      <form onSubmit={handleSubmit(OnSubmitHandler)} className="crt-post">
+        <div className="lft">
+          {" "}
           <input
             type="text"
-            placeholder="(YYYY/MM/DD)"
+            placeholder="city to visit"
+            name="location"
+            ref={register}
+            className="input-crt"
+          />
+          <input
+            type="text"
+            placeholder="Jouney date in (YYYY/MM/DD)"
             name="startDate"
+            ref={register}
+            className="input-crt"
+          />
+          <input
+            className="input-crt"
+            type="text"
+            placeholder="Number of days of travel"
+            name="days"
+            ref={register}
+          />
+          <input
+            className="input-crt"
+            type="text"
+            placeholder="Budget planned"
+            name="Budget"
             ref={register}
           />
         </div>
-        <input
-          type="text"
-          placeholder="locations planning to visit"
-          name="places"
-          ref={register}
-        />
+        <div className="rgt">
+          <textarea
+            className="input-crt-txt"
+            type="text"
+            placeholder="locations planning to visit"
+            name="places"
+            ref={register}
+          />
+          <input
+            className="input-crt"
+            type="text"
+            placeholder="Gender of expected travel partner"
+            name="Expected"
+            ref={register}
+          />
+          <input type="submit" className="crt-submit" id="crt-submit" />
+        </div>
 
-        <input type="submit" />
         {posted && <p> yay !!! Post created</p>}
       </form>
     </div>
