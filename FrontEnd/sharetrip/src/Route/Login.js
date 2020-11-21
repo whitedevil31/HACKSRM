@@ -13,7 +13,7 @@ const Login = () => {
     const [spinner, setSpinner] = useState(false);
     const { register, handleSubmit } = useForm();
     const OnSubmit = (data) => {
-        fetch("https://travel-partner-backend.herokuapp.com/users/login", {
+        fetch("", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
