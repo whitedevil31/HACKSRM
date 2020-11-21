@@ -16,4 +16,16 @@ router.post("/travel", auth, async (req, res) => {
   }
 });
 
+router.post("/travel/filter", auth, async (req, res) => {
+  try {
+    const response = await Travel.find({
+      location: req.body.location,
+      startDate: { $gte: req.body.startDate, $lte: req.body.endDate },
+    });
+    res.send(response);
+  } catch (e) {
+    console.log(e);
+  }
+});
+
 module.exports = router;
