@@ -13,7 +13,7 @@
   justify-content: center;
   align-items: center;
   width: 50%;
-  background: gray;
+  
   height: 95vh;
 }
 .signup-container-form {
@@ -22,7 +22,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  background: gray;
+
   height: 95vh;
 }
 .sec-signup {
@@ -33,6 +33,7 @@
   align-items: center;
   width: 100%;
   height: 100vh;
+
 }
 
 .bio {
@@ -49,7 +50,7 @@
   border-radius: 20px;
   height: 100%;
   width: 87%;
-  background: gray;
+ 
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -59,7 +60,7 @@
   border-radius: 20px;
   height: 100%;
   width: 87%;
-  background: gray;
+ 
   display: flex;
 }
 
@@ -74,11 +75,15 @@
   margin-left: 30px;
   border-radius: 20px;
   padding: 20px;
-  border: 2px solid purple;
+  border: 3px solid blueviolet;
 }
 
 #d-submit {
   width: 200px;
   height: 60px;
   color: #e73c7e;
+}
+#d-submit:hover {
+  background-color: blueviolet;
+  color: white;
 }
