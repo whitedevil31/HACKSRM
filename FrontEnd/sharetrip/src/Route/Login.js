@@ -5,9 +5,10 @@ import "../App.css";
 import { useForm } from "react-hook-form";
 import { BeatLoader, BarLoader } from "react-spinners";
 import { css } from "@emotion/core";
-const loaderCSS = css`
-  margin-top: 25px;
-  margin-bottom: 25px;
+const loaderCSS = css
+    `
+//   margin-top: 25px;
+//   margin-bottom: 25px;
 `;
 const Login = () => {
     let history = useHistory();
@@ -32,25 +33,28 @@ const Login = () => {
             });
         });
     };
-    return (<div>
+    return (<div class="Body">
         <section class="loginForm">
-            <img src={logo} />
-            <h1>Log in</h1>
+            <img src={logo} alt="sharetrip logo" />
+            <h1>Log In Here!</h1>
             <form onSubmit={handleSubmit(OnSubmit)}>
-                <input type="text" placeholder="Email" name="email" ref={register} />
+                <input type="text" class="inputs" placeholder="Email" name="email" ref={register} />
                 <input
+                    class="inputs"
                     type="password"
                     placeholder="Password"
                     name="password"
                     ref={register}
                 />
-                <input type="submit" onClick={() => setSpinner(!spinner)} />
+                <input class="buttons" type="submit" onClick={() => setSpinner(!spinner)} />
             </form>
         </section>
         <BarLoader css={loaderCSS} loading={spinner} color="blue" />
-        <h4>if you dont have a account pls click here to register</h4>
+        <h4>Don't have an account? Register Here!</h4>
         <Link to="/users">
-            <button class="Buttons">SIGNUP</button>
+            <div class="signup">
+                <button class="buttons">SIGNUP</button>
+            </div>
         </Link>
     </div>)
 }
