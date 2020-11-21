@@ -3,8 +3,9 @@
 }
 
 .dash-container {
-  background-color: #8bc6ec;
-  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+  /* background-color: #8bc6ec;
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%); */
+  background: white;
 
   width: 100%;
   height: 100vh;
@@ -22,13 +23,13 @@
   align-items: center;
 }
 .header-left {
-  margin-left: 10px;
-  width: 55%;
+  margin-left: 15px;
+  width: 60%;
 }
 
 .header-right {
   display: flex;
-  width: 45%;
+  width: 40%;
   height: 100%;
   align-items: center;
   justify-content: space-between;
@@ -45,6 +46,9 @@
   justify-content: space-around;
 }
 .logout {
+  font-size: 25px;
+  font-weight: bolder;
+
   border: none;
   background: none;
 }
@@ -53,10 +57,16 @@
 }
 
 .btn-sign-up {
+  font-size: 25px;
+  font-weight: bolder;
   border: none;
   background: none;
 }
 .chat-msg {
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: bolder;
+
   text-decoration: none;
   color: black;
 }
@@ -77,4 +87,48 @@
   height: 50px;
   width: 100px;
   border-radius: 12px;
+}
+
+.component {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background: gray;
+  height: 100vh;
+}
+
+.RESULT {
+  height: 300px;
+  margin-top: 40px;
+  background: cyan;
+  justify-content: space-between;
+  width: 70%;
+  display: flex;
+  border-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.profile {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+.RESULT_LEFT {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 9px;
+  width: 45%;
+  background: yellow;
+  justify-content: space-evenly;
+}
+
+.RESULT_RIGHT {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }

@@ -82,19 +82,19 @@ const DashBoard = () => {
           <h1>DashBoard</h1>
         </div>
         <div className="header-right">
-          <button onClick={logoutHandler} className="logout">
-            logout
-          </button>
           <Link to={{ pathname: "/post", state: { foo: nanda } }}>
-            <button className="btn-sign-up">CreatePost</button>
+            <button className="btn-sign-up">CREATE POST</button>
           </Link>
           <a
             href={`https://whitedevil31-chatapp.herokuapp.com/chat.html?username=${profile.name}&room=${profile.name}`}
             target="_blank"
             className="chat-msg"
           >
-            check msgs !
+            MY INBOX
           </a>
+          <button onClick={logoutHandler} className="logout">
+            LOGOUT
+          </button>
         </div>
       </div>
 
@@ -148,16 +148,21 @@ const DashBoard = () => {
                 componentHandler(item._id);
               }}
             >
-              <img
-                src={`https://sharetrip-spyder.herokuapp.com/users/${item.owner}/pictures`}
-                alt="loading"
-                className="profile"
-              />
-              <p>Name : {item.ownerName}</p>
-              <p>Travel:{moment(item.startDate).format("DD-MM-YYYY")}</p>
-              <p> Age :{item.ownerAge}</p>
-              <p> Gender :{item.ownerGender}</p>
-              <p>locations planned :{item.places}</p>
+              <div className="RESULT_LEFT">
+                <img
+                  src={`https://sharetrip-spyder.herokuapp.com/users/${item.owner}/pictures`}
+                  alt="loading"
+                  className="profile"
+                />
+                <h4>{item.ownerName}</h4>
+              </div>
+              <div className="RESULT_RIGHT">
+                <p>Travel:{moment(item.startDate).format("DD-MM-YYYY")}</p>
+                <p>locations planned :{item.places}</p>
+                <p>days:{item.days}</p>
+                <p> Age :{item.ownerAge}</p>
+                <p> Gender :{item.ownerGender}</p>
+              </div>
             </div>
           ))}
         </div>
