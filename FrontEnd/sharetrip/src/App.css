@@ -1,1 +1,45 @@
-*{margin: 0px;padding: 0px;}
+*{
+  margin : 0px;
+}
+ div{
+   background-image: src = "https://images.unsplash.com/photo-1569982175971-d92b01cf8694?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60.png";
+  display: block;
+  margin: auto;
+}
+.loginForm {
+  background-color: #fcd5ce;
+  margin: 10% 30% 0 30%;
+  top: 50%;
+  left: 50%;
+  border: thick solid black;
+  border-radius: 30px;
+  text-align: center;
+  padding: 10px;
+}
+.loginForm input{
+  margin: 2% 25% 0 25%;
+}
+img {
+  width: 10rem;
+  height: 10rem;
+}
+.loginForm input[type = "submit"]{
+  background: none;
+  color: #e9c46a;
+  border: 2px, solid;
+  border-radius: 7px;
+  background-color: black;
+  padding: .5em 1em; 
+  font-size: 1em;
+  transition: color 0.25s, border-color 0.25s 
+}
+.loginForm input[type = "submit"]:hover{
+  color: #457b9d; 
+  border: 2px solid;
+  box-shadow: 0 0.9em -0.9em #1d3557; 
+  transform: translate (0.1,0.1);
+  
+}
+.loginForm input[type = "text"]{
+  border-radius: ;
+}

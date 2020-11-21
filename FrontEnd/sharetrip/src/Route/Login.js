@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
+import logo from "../assets/Logo.jpg"
 import "../App.css";
 import { useForm } from "react-hook-form";
 import { BeatLoader, BarLoader } from "react-spinners";
@@ -32,22 +33,24 @@ const Login = () => {
         });
     };
     return (<div>
-        <h1>login page</h1>
-        <form onSubmit={handleSubmit(OnSubmit)}>
-            <input type="text" placeholder="email" name="email" ref={register} />
-            <input
-                type="password"
-                placeholder="password"
-                name="password"
-                ref={register}
-            />
-            <input type="submit" onClick={() => setSpinner(!spinner)} />
-        </form>
-
+        <section class="loginForm">
+            <img src={logo} />
+            <h1>Log in</h1>
+            <form onSubmit={handleSubmit(OnSubmit)}>
+                <input type="text" placeholder="Email" name="email" ref={register} />
+                <input
+                    type="password"
+                    placeholder="Password"
+                    name="password"
+                    ref={register}
+                />
+                <input type="submit" onClick={() => setSpinner(!spinner)} />
+            </form>
+        </section>
         <BarLoader css={loaderCSS} loading={spinner} color="blue" />
         <h4>if you dont have a account pls click here to register</h4>
         <Link to="/users">
-            <button>SIGNUP</button>
+            <button class="Buttons">SIGNUP</button>
         </Link>
     </div>)
 }
