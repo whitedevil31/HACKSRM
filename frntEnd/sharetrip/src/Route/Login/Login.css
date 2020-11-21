@@ -14,7 +14,7 @@
   flex-direction: column;
   height: 70vh;
   align-items: center;
-  border: thick solid black;
+  border: thick solid blueviolet;
   border-radius: 30px;
   text-align: center;
 
@@ -44,19 +44,33 @@
   display: flex;
   margin-top: 25px;
   align-items: center;
-  justify-content: center;
+  justify-content: center;  
+ }
+ .submit {
+   
+  border: 2px solid blueviolet;
 }
+
+.submit:hover {
+  background-color:blueviolet ;
+  color: white;
+}
+
+
 .input-container {
   display: flex;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   justify-content: space-around;
   align-items: center;
   width: 80%;
+  
 }
 .input-entry {
   width: 200px;
   height: 50px;
   border-radius: 10px;
+  border: thick solid blue;
+
 }
 
 .h4-text {
@@ -65,4 +79,13 @@
 
 .form1 {
   width: 100%;
+}
+.signup {
+
+border: 2px solid blueviolet;
+}
+
+.signup:hover {
+  background-color: blueviolet;
+  color: white;
 }
