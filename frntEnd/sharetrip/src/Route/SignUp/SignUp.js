@@ -97,6 +97,7 @@ const SignUp = () => {
                 ref={register}
               />
             </div>
+            
             <div className="sec-signup">
               <textarea
                 type="text"
