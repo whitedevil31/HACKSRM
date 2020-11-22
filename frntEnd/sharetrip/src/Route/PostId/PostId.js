@@ -51,24 +51,38 @@ const PostId = () => {
 
   return (
     show && (
-      <div>
-        <img
-          src={`https://sharetrip-spyder.herokuapp.com/users/${result.owner}/pictures`}
-          alt="loading"
-          className="profile"
-        />{" "}
-        <h1>location : {result.location}</h1>
-        <h1>{result.ownerName}</h1>
-        <h1>places planned to visit :{result.places}</h1>
-        <h1>{result.ownerGender}</h1>
-        <h1>{result.ownerAge}</h1>
-        <div className="a">
-          <a
-            href={`https://whitedevil31-chatapp.herokuapp.com/chat.html?username=${profile.name}&room=${result.ownerName}`}
-            target="_blank"
-          >
-            CHAT NOW !
-          </a>
+      <div className="id-container">
+        <div className="img-div">
+          <img
+            src={`https://sharetrip-spyder.herokuapp.com/users/${result.owner}/pictures`}
+            alt="loading"
+            className="id-profile"
+          />
+
+          <div className="id-a">
+            <a
+              href={`https://whitedevil31-chatapp.herokuapp.com/chat.html?username=${profile.name}&room=${result.ownerName}`}
+              target="_blank"
+              className="id-tag"
+            >
+              CHAT NOW !
+            </a>
+          </div>
+        </div>
+        <div className="info">
+          <div className="id-left">
+            <h2>Name : {result.ownerName}</h2>
+            <h1>Gender : {result.ownerGender}</h1>
+            <h1>Age : {result.ownerAge}</h1>
+            <h3>Myself :{result.ownerBio}</h3>
+          </div>
+          <div className="id-right">
+            <h1>Location : {result.location}</h1>
+            <h1>places planned to visit :{result.places}</h1>
+            <h1>Trip planned for : {result.days}</h1>
+            <h1>Maximum Budget : ₹{result.Budget}</h1>
+            <h1>Expected Travel partner gender : {result.Expected}</h1>
+          </div>
         </div>
       </div>
     )
