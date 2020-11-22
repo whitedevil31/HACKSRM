@@ -110,14 +110,14 @@ const DashBoard = () => {
           <input
             className="dash-input"
             type="text"
-            placeholder="Starting date of your plan"
+            placeholder="Starting date(YYYY-MM-DD)"
             name="startDate"
             ref={register}
           />
           <input
             className="dash-input"
             type="text"
-            placeholder="Ending date of your plan"
+            placeholder="Ending date(YYYY-MM-DD)"
             name="endDate"
             ref={register}
           />
@@ -159,11 +159,11 @@ const DashBoard = () => {
               <div className="RESULT_RIGHT">
                 <div className="left">
                   <h4>Travel:{moment(item.startDate).format("DD-MM-YYYY")}</h4>
-                  <h4>Budget:{item.Budget}</h4>{" "}
+                  <h4>Budget:₹ {item.Budget}</h4>
                   <h4>Expected Partner:{item.Expected}</h4>
                 </div>
                 <div className="right">
-                  <h4>Days Planned:{item.days}</h4>
+                  <h4>Trip planned :{item.days} days</h4>
                   <h4>Age :{item.ownerAge}</h4>
                   <h4> Gender :{item.ownerGender}</h4>
                 </div>
@@ -172,7 +172,6 @@ const DashBoard = () => {
           ))}
         </div>
       )}
-      {logout && <h1>logging out !!!!</h1>}
     </div>
   );
 };

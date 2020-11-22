@@ -86,7 +86,7 @@
   font: 40px;
   font-weight: bolder;
   height: 50px;
-  width: 100px;
+  width: 130px;
   border-radius: 12px;
 }
 .btn-submit:hover {
@@ -115,8 +115,7 @@
   justify-content: space-between;
   width: 70%;
   display: flex;
-  border-radius: 10px;
-  border-top-left-radius: 10px;
+  border-radius: 20px;
 }
 
 .profile {
