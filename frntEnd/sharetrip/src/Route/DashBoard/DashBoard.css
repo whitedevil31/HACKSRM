@@ -83,9 +83,16 @@
 }
 
 .btn-submit {
+  font: 40px;
+  font-weight: bolder;
   height: 50px;
   width: 100px;
   border-radius: 12px;
+}
+.btn-submit:hover {
+  cursor: pointer;
+  background: blueviolet;
+  color: white;
 }
 
 .component {
@@ -94,14 +101,17 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  background: gray;
+  background-color: #8bc6ec;
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
   cursor: pointer;
 }
 
 .RESULT {
   height: 300px;
   margin-top: 40px;
-  background: cyan;
+  background-color: #fbda61;
+  background-image: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%);
+
   justify-content: space-between;
   width: 70%;
   display: flex;
@@ -120,7 +130,8 @@
   flex-direction: column;
   margin-right: 9px;
   width: 45%;
-  background: yellow;
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
   justify-content: space-evenly;
 }
 

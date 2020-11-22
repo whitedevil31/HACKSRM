@@ -72,16 +72,16 @@ const PostId = () => {
         <div className="info">
           <div className="id-left">
             <h2>Name : {result.ownerName}</h2>
-            <h1>Gender : {result.ownerGender}</h1>
-            <h1>Age : {result.ownerAge}</h1>
+            <h2>Gender : {result.ownerGender}</h2>
+            <h2>Age : {result.ownerAge}</h2>
             <h3>Myself :{result.ownerBio}</h3>
           </div>
           <div className="id-right">
-            <h1>Location : {result.location}</h1>
-            <h1>places planned to visit :{result.places}</h1>
-            <h1>Trip planned for : {result.days}</h1>
-            <h1>Maximum Budget : ₹{result.Budget}</h1>
-            <h1>Expected Travel partner gender : {result.Expected}</h1>
+            <h2>Location to travel : {result.location}</h2>
+            <h2>Places planned to visit :{result.places}</h2>
+            <h2>Number of days planned : {result.days}</h2>
+            <h2>Maximum Budget : ₹{result.Budget}</h2>
+            <h2>Gender preference : {result.Expected}</h2>
           </div>
         </div>
       </div>

@@ -6,8 +6,8 @@ import { useForm } from "react-hook-form";
 import { BeatLoader, BarLoader } from "react-spinners";
 import { css } from "@emotion/core";
 const loaderCSS = css`
-  //   margin-top: 25px;
-  //   margin-bottom: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 `;
 const Login = () => {
   let history = useHistory();
@@ -56,12 +56,16 @@ const Login = () => {
               />
             </div>
             <div className="submit">
-              <input type="submit" onClick={() => setSpinner(!spinner)} />
+              <input
+                className="form-btn-submit"
+                type="submit"
+                onClick={() => setSpinner(!spinner)}
+              />
             </div>
           </form>
         </div>
       </div>
-      <BarLoader css={loaderCSS} loading={spinner} color="blue" />
+      <BeatLoader css={loaderCSS} loading={spinner} color="blue" />
       <h4 className="h4-text">Don't have an account? Register Here!</h4>
       <Link to="/users">
         <div class="signup">

@@ -103,21 +103,21 @@ const DashBoard = () => {
           <input
             className="dash-input"
             type="text"
-            placeholder="location to search for"
+            placeholder="Location to search for"
             name="location"
             ref={register}
           />
           <input
             className="dash-input"
             type="text"
-            placeholder="starting date"
+            placeholder="Starting date of your plan"
             name="startDate"
             ref={register}
           />
           <input
             className="dash-input"
             type="text"
-            placeholder="ending date"
+            placeholder="Ending date of your plan"
             name="endDate"
             ref={register}
           />

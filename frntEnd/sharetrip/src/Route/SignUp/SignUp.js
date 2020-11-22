@@ -3,7 +3,14 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
 import { useForm } from "react-hook-form";
+import { BeatLoader, BarLoader } from "react-spinners";
+import { css } from "@emotion/core";
+const loaderCSS = css`
+  margin-top: 15px;
+  margin-bottom: 15px;
+`;
 const SignUp = () => {
+  const [spinner, setSpinner] = useState(false);
   const { register, handleSubmit } = useForm();
   const [getAvatar, setAvatar] = useState(null);
   const [setDone, getDone] = useState({});
@@ -95,11 +102,11 @@ const SignUp = () => {
                 ref={register}
               />
             </div>
-            
+
             <div className="sec-signup">
               <textarea
                 type="text"
-                placeholder="Bio"
+                placeholder="  Your Bio"
                 className="bio"
                 name="bio"
                 ref={register}
@@ -107,8 +114,12 @@ const SignUp = () => {
               <input className="input-class" type="submit" id="d-submit" />
               {show && (
                 <div className="upload">
-                  <input type="file" onChange={fileHandler} />
-                  <button onClick={fileUploadHandler} className="d-upload">
+                  <input
+                    type="file"
+                    onChange={fileHandler}
+                    className="filehand"
+                  />
+                  <button onClick={fileUploadHandler} className="upload-class">
                     UPLOAD
                   </button>
                 </div>
