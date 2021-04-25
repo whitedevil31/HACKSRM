@@ -73,13 +73,6 @@ const CreatePost = () => {
             name="places"
             ref={register}
           />
-          <input
-            className="input-crt"
-            type="text"
-            placeholder="Gender of expected travel partner"
-            name="Expected"
-            ref={register}
-          />
           <input type="submit" className="crt-submit" id="crt-submit" />
         </div>
 

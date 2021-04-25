@@ -1,0 +1,44 @@
+.container-home {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+}
+.navbar {
+  height: 130px;
+  width: 100%;
+  border: 5px solid black;
+  display: flex;
+  position: sticky;
+}
+
+.logo-navbar {
+  height: 130px;
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+}
+.navbar-content {
+  display: flex;
+
+  width: 90vw;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar-content-ind {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 30px;
+  border: none;
+  background-color: none;
+}
+.navbar-content-ind:hover {
+  background-color: pink;
+  cursor: pointer;
+}

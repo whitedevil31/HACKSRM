@@ -5,6 +5,9 @@ import SignUp from "./Route/SignUp/SignUp";
 import DashBoard from "./Route/DashBoard/DashBoard";
 import CreatePost from "./Route/CreatePost/CreatePost";
 import PostId from "./Route/PostId/PostId";
+import Home from "./Route/Home/Home";
+import About from "./Route/About/About";
+import Contact from "./Route/Contact/Contact";
 
 const App = () => {
   return (
@@ -12,6 +15,15 @@ const App = () => {
       <Switch>
         <Route exact path="/">
           <Login />
+        </Route>
+        <Route exact path="/about">
+          <About />
+        </Route>
+        <Route exact path="/contact">
+          <Contact />
+        </Route>
+        <Route exact path="/home">
+          <Home />
         </Route>
 
         <Route path="/users">
