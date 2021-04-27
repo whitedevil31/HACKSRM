@@ -13,7 +13,7 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/login">
           <Login />
         </Route>
         <Route exact path="/about">
@@ -22,7 +22,7 @@ const App = () => {
         <Route exact path="/contact">
           <Contact />
         </Route>
-        <Route exact path="/home">
+        <Route exact path="/">
           <Home />
         </Route>
 

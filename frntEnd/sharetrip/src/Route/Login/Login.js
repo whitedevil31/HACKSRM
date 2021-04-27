@@ -39,17 +39,19 @@ const Login = () => {
           <img src={logo} alt="sharetrip logo" className="logo" />
         </div>
         <div className="navbar-content">
-          <Link to="/home">
+          <Link to="/">
             <button className="navbar-content-ind">HOME</button>
           </Link>
+
           <Link to="/about">
             {" "}
             <button className="navbar-content-ind">ABOUT</button>
-          </Link>{" "}
+          </Link>
           <Link to="/contact">
             <button className="navbar-content-ind">CONTACT US</button>
           </Link>
-          <Link to="/">
+
+          <Link to="/login">
             {" "}
             <button className="navbar-content-ind">LOGIN</button>
           </Link>

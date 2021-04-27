@@ -10,7 +10,7 @@ const Home = () => {
           <img src={logo} alt="sharetrip logo" className="logo" />
         </div>
         <div className="navbar-content">
-          <Link to="/home">
+          <Link to="/">
             <button className="navbar-content-ind">HOME</button>
           </Link>
 
@@ -22,7 +22,7 @@ const Home = () => {
             <button className="navbar-content-ind">CONTACT US</button>
           </Link>
 
-          <Link to="/">
+          <Link to="/login">
             {" "}
             <button className="navbar-content-ind">LOGIN</button>
           </Link>
