@@ -61,7 +61,7 @@ const PostId = () => {
 
           <div className="id-a">
             <a
-              href={`https://whitedevil31-chatapp.herokuapp.com/chat.html?username=${profile.name}&room=${result.ownerName}`}
+              href={`https://thechatterbotks.herokuapp.com/chat.html?username=${profile.name}&room=${result.ownerName}`}
               target="_blank"
               className="id-tag"
             >
