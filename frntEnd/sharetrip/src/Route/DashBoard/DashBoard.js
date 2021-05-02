@@ -99,7 +99,10 @@ const DashBoard = () => {
       </div>
 
       <form onSubmit={handleSubmit(OnSubmitHandler)} className="dash-form">
+       
+        
         <div className="search">
+        <h2>Create Ride</h2>
           <input
             className="dash-input"
             type="text"

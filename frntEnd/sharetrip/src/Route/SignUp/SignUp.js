@@ -84,12 +84,13 @@ const SignUp = () => {
         </div>
       </div>
       <div className="signup-container">
+      <h2>Sign Up</h2>
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="signup-container-form"
         >
-          <div className="input-container">
-            <div className="input-container1">
+          <div className="input-contain">
+            <div className="input-contain1">
               <input
                 className="input-class"
                 type="text"
@@ -97,7 +98,8 @@ const SignUp = () => {
                 name="name"
                 ref={register}
               />
-
+             
+             <p>
               <input
                 className="input-class"
                 type="text"
@@ -105,7 +107,8 @@ const SignUp = () => {
                 name="age"
                 ref={register}
               />
-
+              </p>
+                
               <input
                 className="input-class"
                 type="text"
@@ -113,7 +116,7 @@ const SignUp = () => {
                 name="gender"
                 ref={register}
               />
-
+               
               <input
                 className="input-class"
                 type="text"
@@ -121,7 +124,7 @@ const SignUp = () => {
                 name="email"
                 ref={register}
               />
-
+               
               <input
                 className="input-class"
                 type="text"
@@ -129,13 +132,13 @@ const SignUp = () => {
                 name="password"
                 ref={register}
               />
-            </div>
+            
 
             <div className="sec-signup">
               <textarea
                 type="text"
                 placeholder="  Your Bio"
-                className="bio"
+                
                 name="bio"
                 ref={register}
               />
@@ -154,7 +157,11 @@ const SignUp = () => {
               )}
             </div>
           </div>
+          </div>  
         </form>
+        <div className="para">
+        <p>Already registered, log in <a href="./login.html" class="shortcut">here</a>!</p>
+        </div>
       </div>
     </div>
   );

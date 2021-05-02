@@ -63,7 +63,7 @@ const Login = () => {
       </div>
       <div className="loginForm">
         <img src={logo} alt="sharetrip logo" className="logo" />
-        <div className="formArea">
+        <div className="formArea">  
           <form onSubmit={handleSubmit(OnSubmit)} className="formArea">
             <div className="input-container">
               <input
@@ -91,13 +91,20 @@ const Login = () => {
           </form>
         </div>
       </div>
+      <div className="beatloader" >
       <BeatLoader css={loaderCSS} loading={spinner} color="blue" />
-      <h4 className="h4-text">Don't have an account? Register Here!</h4>
+      </div>
+      
+      <h4 className="h4-text">Not yet registered, sign up &nbsp;
+      
       <Link to="/users">
-        <div class="signup">
-          <button className="signup">SIGNUP</button>
-        </div>
+        
+          {/* <button className="signup">SIGNUP</button> */}
+             here!
+       
       </Link>
+      </h4>
+      <div className="blank"></div>
     </div>
   );
 };

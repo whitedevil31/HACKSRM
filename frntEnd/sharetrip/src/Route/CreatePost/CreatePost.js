@@ -31,7 +31,7 @@ const CreatePost = () => {
   };
   return (
     <div className="crt-container">
-      <h1 className="crt-h1">Create A post to the outer World ! </h1>
+      <h1 className="crt-h1">Create a post to the outer World ! </h1>
 
       <form onSubmit={handleSubmit(OnSubmitHandler)} className="crt-post">
         <div className="lft">
