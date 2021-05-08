@@ -8,7 +8,7 @@ const connectDB = async () => {
       useFindAndModify: false,
       useUnifiedTopology: true,
     });
-    console.log(`mongoose connected to : ${connect.connection.host}`);
+    console.log(`DB connected to : ${connect.connection.host}`);
   } catch (e) {
     console.log(e);
   }
