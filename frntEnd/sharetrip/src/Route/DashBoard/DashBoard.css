@@ -16,7 +16,7 @@
   --light: #7f8c8d;
   --lighter: #ecf0f1;
   --bright: #ffffff;
-  
+
   --box-shadow: 0 0 5px var(--light);
   --top: 82px;
   min-width: 300px;
@@ -27,12 +27,9 @@
 }
 
 .dash-header {
-  
-
   display: flex;
   width: 100%;
- 
-  
+
   align-items: center;
   position: fixed;
   top: 0;
@@ -42,7 +39,7 @@
   justify-content: space-around;
   background-color: var(--bright);
   box-shadow: var(--box-shadow);
-    
+
   align-items: center;
 }
 .header-left {
@@ -50,7 +47,7 @@
   display: flex;
   width: 400px;
   justify-content: space-between;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .header-right {
@@ -76,9 +73,9 @@
   font-size: 25px;
   font-weight: bolder;
   color: var(--darker);
-    text-decoration: none;
-    font-weight: normal !important;
-    font-family: var(--font);
+  text-decoration: none;
+  font-weight: normal !important;
+  font-family: var(--font);
   border: none;
   background: none;
 }
@@ -93,14 +90,14 @@
   background: none;
 } */
 
-.btn-sign-up {color: var(--darker);
-    text-decoration: none;
-    font-weight: normal !important;
-    font-family: var(--font);
-    font-size: 25px;
-    border: none;
-    background: none;
-   
+.btn-sign-up {
+  color: var(--darker);
+  text-decoration: none;
+  font-weight: normal !important;
+  font-family: var(--font);
+  font-size: 25px;
+  border: none;
+  background: none;
 }
 .chat-msg {
   margin-bottom: 5px;
@@ -116,23 +113,21 @@
 }
 
 .dash-form {
-
-padding: 300px;
-text-align: center;
-background-color: var(--lighter);
+  padding: 300px;
+  text-align: center;
+  background-color: var(--lighter);
 }
 .dash-input {
-  
   border-radius: 10px;
   height: 40px;
   padding: 20px;
   margin: 10px;
   max-width: 95%;
-    width: 450px;
-    box-shadow: var(--box-shadow);
-    border: transparent;
-    font-family: var(--font);
-    font-size: 16px;
+  width: 450px;
+  box-shadow: var(--box-shadow);
+  border: transparent;
+  font-family: var(--font);
+  font-size: 16px;
 }
 
 .btn-submit {
@@ -140,17 +135,17 @@ background-color: var(--lighter);
   font-weight: bolder;
   height: 50px;
   max-width: 95%;
-    width: 400px;
+  width: 400px;
   border-radius: 20px;
-   color: var(--bright); 
-   background-color: var(--dark);
-    padding: 10px;
-    text-decoration: none;
-    text-align: center;
-    border: transparent;
-    margin: 10px auto;
-    font-family: var(--font);
-    font-size: 16px;
+  color: var(--bright);
+  background-color: var(--dark);
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  border: transparent;
+  margin: 10px auto;
+  font-family: var(--font);
+  font-size: 16px;
 }
 .btn-submit:hover {
   cursor: pointer;
@@ -175,7 +170,7 @@ background-color: var(--lighter);
   --light: #7f8c8d;
   --lighter: #ecf0f1;
   --bright: #ffffff;
-  --font: 'Capriola', sans-serif;
+  --font: "Capriola", sans-serif;
   --box-shadow: 0 0 5px var(--light);
   --top: 82px;
 }
@@ -183,8 +178,7 @@ background-color: var(--lighter);
 .RESULT {
   height: 300px;
   margin-top: 40px;
-  background-color: #fbda61;
-  background-image: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%);
+  background-color: red;
 
   justify-content: space-between;
   width: 70%;

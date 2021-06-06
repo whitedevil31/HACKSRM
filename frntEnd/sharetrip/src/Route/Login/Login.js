@@ -14,7 +14,7 @@ const Login = () => {
   const [spinner, setSpinner] = useState(false);
   const { register, handleSubmit } = useForm();
   const OnSubmit = (data) => {
-    fetch("https://sharetrip-spyder.herokuapp.com/users/login", {
+    fetch("http://localhost:3000/users/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -63,7 +63,7 @@ const Login = () => {
       </div>
       <div className="loginForm">
         <img src={logo} alt="sharetrip logo" className="logo" />
-        <div className="formArea">  
+        <div className="formArea">
           <form onSubmit={handleSubmit(OnSubmit)} className="formArea">
             <div className="input-container">
               <input
@@ -91,18 +91,16 @@ const Login = () => {
           </form>
         </div>
       </div>
-      <div className="beatloader" >
-      <BeatLoader css={loaderCSS} loading={spinner} color="blue" />
+      <div className="beatloader">
+        <BeatLoader css={loaderCSS} loading={spinner} color="blue" />
       </div>
-      
-      <h4 className="h4-text">Not yet registered, sign up &nbsp;
-      
-      <Link to="/users">
-        
+
+      <h4 className="h4-text">
+        Not yet registered, sign up &nbsp;
+        <Link to="/users">
           {/* <button className="signup">SIGNUP</button> */}
-             here!
-       
-      </Link>
+          here!
+        </Link>
       </h4>
       <div className="blank"></div>
     </div>

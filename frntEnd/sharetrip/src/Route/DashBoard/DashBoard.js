@@ -18,7 +18,7 @@ const DashBoard = () => {
   const history = useHistory();
   useEffect(() => {
     const bearer = "Bearer " + nanda;
-    fetch("https://sharetrip-spyder.herokuapp.com/users/me", {
+    fetch("http://localhost:3000/users/me", {
       method: "GET",
       withCredentials: true,
       headers: {
@@ -35,15 +35,12 @@ const DashBoard = () => {
   const OnSubmitHandler = async (data) => {
     const bearer = "Bearer " + nanda;
 
-    const getting = await fetch(
-      "https://sharetrip-spyder.herokuapp.com/travel/filter",
-      {
-        method: "POST",
-        withCredentials: true,
-        headers: { Authorization: bearer, "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      }
-    );
+    const getting = await fetch("http://localhost:3000/travel/filter", {
+      method: "POST",
+      withCredentials: true,
+      headers: { Authorization: bearer, "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
     const get = await getting.json();
 
     setTimeout(() => {
@@ -55,7 +52,7 @@ const DashBoard = () => {
   const logoutHandler = () => {
     const bearer = "Bearer " + nanda;
 
-    fetch("https://sharetrip-spyder.herokuapp.com/users/logout", {
+    fetch("http://localhost:3000/users/logout", {
       method: "POST",
       withCredentials: true,
       headers: {
@@ -99,10 +96,8 @@ const DashBoard = () => {
       </div>
 
       <form onSubmit={handleSubmit(OnSubmitHandler)} className="dash-form">
-       
-        
         <div className="search">
-        <h2>Create Ride</h2>
+          <h2>Create Ride</h2>
           <input
             className="dash-input"
             type="text"
@@ -153,7 +148,7 @@ const DashBoard = () => {
             >
               <div className="RESULT_LEFT">
                 <img
-                  src={`https://sharetrip-spyder.herokuapp.com/users/${item.owner}/pictures`}
+                  src={`http://localhost:3000/users/${item.owner}/pictures`}
                   alt="loading"
                   className="profile"
                 />

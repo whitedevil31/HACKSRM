@@ -11,7 +11,7 @@ const PostId = () => {
   const history = useHistory();
   useEffect(() => {
     const bearer = "Bearer " + location.state.pwd;
-    fetch("https://sharetrip-spyder.herokuapp.com/users/me", {
+    fetch("http://localhost:3000/users/me", {
       method: "GET",
       withCredentials: true,
       headers: {
@@ -30,7 +30,7 @@ const PostId = () => {
     const ids = location.state.locationId;
     const bearer = "Bearer " + location.state.pwd;
 
-    fetch(`https://sharetrip-spyder.herokuapp.com/travel/${ids}`, {
+    fetch(`http://localhost:3000/travel/${ids}`, {
       method: "GET",
       withCredentials: true,
       headers: {
@@ -54,7 +54,7 @@ const PostId = () => {
       <div className="id-container">
         <div className="img-div">
           <img
-            src={`https://sharetrip-spyder.herokuapp.com/users/${result.owner}/pictures`}
+            src={`http://localhost:3000/users/${result.owner}/pictures`}
             alt="loading"
             className="id-profile"
           />

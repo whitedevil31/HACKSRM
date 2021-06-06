@@ -27,7 +27,7 @@ const SignUp = () => {
     const bearer = "Bearer " + setDone.token;
 
     axios
-      .post("https://sharetrip-spyder.herokuapp.com/users/me/pictures", fd, {
+      .post("http://localhost:3000/users/me/pictures", fd, {
         headers: { Authorization: bearer },
       })
       .then((res) => {
@@ -39,7 +39,7 @@ const SignUp = () => {
   };
 
   const onSubmit = (data) => {
-    fetch("https://sharetrip-spyder.herokuapp.com/users", {
+    fetch("http://localhost:3000/users", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),

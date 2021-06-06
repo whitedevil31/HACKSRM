@@ -12,7 +12,7 @@ const CreatePost = () => {
   const OnSubmitHandler = (data) => {
     const foo = location.state.foo;
     const bearer = "Bearer " + location.state.foo;
-    fetch("https://sharetrip-spyder.herokuapp.com/travel", {
+    fetch("http://localhost:3000/travel", {
       method: "POST",
       withCredentials: true,
       headers: {
