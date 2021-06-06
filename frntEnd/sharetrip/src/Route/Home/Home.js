@@ -15,15 +15,6 @@ const Home = () => {
           <Link to="/">
             <button className="navbar-content-ind">HOME</button>
           </Link>
-
-          <Link to="/about">
-            {" "}
-            <button className="navbar-content-ind">ABOUT</button>
-          </Link>
-          <Link to="/contact">
-            <button className="navbar-content-ind">CONTACT US</button>
-          </Link>
-
           <Link to="/login">
             {" "}
             <button className="navbar-content-ind">LOGIN</button>
