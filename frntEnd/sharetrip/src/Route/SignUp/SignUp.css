@@ -88,8 +88,9 @@ body {
   align-items: center;
   width: 50%;
   margin-top: var(--top);
-  height: 95vh;
+  height:75vh;
   width: 100%;
+  overflow-y:hidden;
 }
 /* .signup-container  {
   width: 100%;
@@ -110,11 +111,12 @@ body {
 
   height: 95vh;
 } */
-
-/* .signup-container-form {
+ .signup-container-form {
   display: flex;
   flex-direction: column;
-} */
+  justify-content:center;
+  align-items:center;
+} 
 
 
 
@@ -187,6 +189,7 @@ body {
   padding: 10vh 0;
   text-align: center;
   background-color: var(--lighter);
+  border-radius:20px;
 }
 
 /* .input-container {
@@ -198,12 +201,16 @@ body {
 } */
 
 .input-contain {
-  width: 100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width: 80%;
   min-height: calc(100vh - var(--top));
   margin-top: var(--top);
   padding: 10vh 0;
   text-align: center;
   background-color: var(--lighter);
+  border-radius:10px;
 }
 
 .gender {
@@ -223,19 +230,32 @@ body {
 
 .input-class 
   {
-    max-width: 95%;
+   
     width: 450px;
-    min-width: 160px;
+    min-width: 150px;
     padding: 10px;
     border-radius: 5px;
     background-color: var(--bright);
     border: transparent;
-    margin: 10px auto;
+    margin: 15px auto;
     font-family: var(--font);
     font-size: 16px;
     box-shadow: var(--box-shadow);
+
   }
 
+  .bio-class{
+    margin-top:25px;
+    border:2px solid black;
+  }
+.bio-field{
+  min-width:60px;
+  margin-right:35px !important;
+  margin-top:40px !important;
+  padding-top:15px !important;
+  padding-bottom:-10px;
+
+}
 
 /* #d-submit {
   width: 200px;

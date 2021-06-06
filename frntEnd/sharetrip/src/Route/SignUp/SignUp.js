@@ -65,14 +65,6 @@ const SignUp = () => {
             <button className="navbar-content-ind">HOME</button>
           </Link>
 
-          <Link to="/about">
-            {" "}
-            <button className="navbar-content-ind">ABOUT</button>
-          </Link>
-          <Link to="/contact">
-            <button className="navbar-content-ind">CONTACT US</button>
-          </Link>
-
           <Link to="/login">
             {" "}
             <button className="navbar-content-ind">LOGIN</button>
@@ -91,6 +83,7 @@ const SignUp = () => {
         >
           <div className="input-contain">
             <div className="input-contain1">
+            <p>
               <input
                 className="input-class"
                 type="text"
@@ -98,7 +91,7 @@ const SignUp = () => {
                 name="name"
                 ref={register}
               />
-             
+             </p>
              <p>
               <input
                 className="input-class"
@@ -108,7 +101,7 @@ const SignUp = () => {
                 ref={register}
               />
               </p>
-                
+              <p>  
               <input
                 className="input-class"
                 type="text"
@@ -116,7 +109,7 @@ const SignUp = () => {
                 name="gender"
                 ref={register}
               />
-               
+               </p>
               <input
                 className="input-class"
                 type="text"
@@ -124,6 +117,7 @@ const SignUp = () => {
                 name="email"
                 ref={register}
               />
+          
                
               <input
                 className="input-class"
@@ -132,13 +126,13 @@ const SignUp = () => {
                 name="password"
                 ref={register}
               />
-            
+         
 
-            <div className="sec-signup">
+            <div className="input-class bio-class">
               <textarea
                 type="text"
-                placeholder="  Your Bio"
-                
+                className='bio-field'
+                placeholder="Your Bio"
                 name="bio"
                 ref={register}
               />
